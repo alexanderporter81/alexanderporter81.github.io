@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Porter</title>
+  <style>
+    :root {
+      --columbia-blue: #75AADB;
+      --columbia-navy: #002B7F;
+      --ink: #1a1a1a;
+      --muted: #5a6270;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --line: #e3e8f0;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    a { color: var(--columbia-navy); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .nav {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem;
+      align-items: center; justify-content: space-between;
+      padding: 0.85rem 1.5rem;
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+    .nav .brand { font-weight: 700; color: var(--columbia-navy); letter-spacing: 0.02em; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 0.9rem 1.1rem; font-size: 0.95rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--columbia-navy); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    .hero {
+      background: linear-gradient(135deg, var(--columbia-navy), #0a4aa6 55%, var(--columbia-blue));
+      color: #fff; border-radius: 16px; padding: 2.25rem 1.75rem; margin-bottom: 1.75rem;
+      box-shadow: 0 10px 30px rgba(0,43,127,0.18);
+    }
+    .hero h1 { margin: 0 0 0.4rem; font-size: 2.1rem; letter-spacing: -0.02em; }
+    .hero p { margin: 0; opacity: 0.95; max-width: 40rem; }
+    .hero .links { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .hero .links a {
+      background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35);
+      padding: 0.45rem 0.85rem; border-radius: 999px; font-size: 0.9rem;
+    }
+    .hero .links a:hover { background: rgba(255,255,255,0.28); text-decoration: none; }
+    section { margin-bottom: 1.75rem; }
+    h2 {
+      margin: 0 0 0.9rem; color: var(--columbia-navy); font-size: 1.25rem;
+      border-bottom: 3px solid var(--columbia-blue); display: inline-block; padding-bottom: 0.2rem;
+    }
+    .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      padding: 1.1rem 1.15rem; box-shadow: 0 2px 8px rgba(16,24,40,0.04);
+    }
+    .card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; color: var(--columbia-navy); }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.55rem; }
+    ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+    li { margin: 0.35rem 0; }
+    .job { margin-bottom: 1.15rem; }
+    .job:last-child { margin-bottom: 0; }
+    .role { font-weight: 600; }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.55rem; }
+    .chip {
+      background: #eaf3fb; color: var(--columbia-navy); border-radius: 999px;
+      padding: 0.25rem 0.7rem; font-size: 0.82rem;
+    }
+    footer {
+      margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#top">Alex Porter</a>
+    <div class="nav-links">
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#additional">Additional</a>
+      <a href="cv.pdf">CV (PDF)</a>
+      <a href="https://www.linkedin.com/in/alexporter97/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/alexanderporter81" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header class="hero">
+      <h1>Alex Porter</h1>
+      <p>MBA candidate at Columbia Business School · U.S. Army veteran · Focused on private wealth and client leadership.</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/alexporter97/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/alexanderporter81" target="_blank" rel="noopener">GitHub</a>
+        <a href="cv.pdf">Download CV</a>
+        <a href="mailto:APorter27@gsb.columbia.edu">CBS email</a>
+      </div>
+    </header>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="tiles">
+        <article class="card">
+          <h3>Columbia Business School</h3>
+          <div class="meta">MBA, Strategy · New York, NY · 2025–2027 (May 2027)</div>
+          <ul>
+            <li><strong>Member:</strong> Management Consulting Association, Investment Management Association, Veterans Club, Rugby Club, Tennis Club</li>
+            <li><strong>Honors:</strong> Lester Korn Scholarship</li>
+            <li><strong>Leadership:</strong> AVP of U.S. Veterans Benefits (Veterans Club)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>United States Military Academy</h3>
+          <div class="meta">BS, Business Management · West Point, NY · 2015–2019 (May 2019)</div>
+          <ul>
+            <li><strong>Honors:</strong> Dean’s List 2016–2019</li>
+            <li><strong>Wounded Warrior Project:</strong> Organized Warrior Games and veteran support as West Point liaison</li>
+            <li><strong>Cultural Affairs Seminar:</strong> Mentorship and outreach programs</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience — United States Army</h2>
+      <div class="card">
+        <div class="job">
+          <div class="role">Operations Officer, 434th Field Artillery Brigade (Basic Training)</div>
+          <div class="meta">Fort Sill, OK · 2023–2024</div>
+          <ul>
+            <li>Directed strategic planning and execution of four training cycles, mobilizing 50+ contractors and 120+ military personnel to convert 1,000+ civilians into mission-ready soldiers, boosting U.S. Army operational readiness by 40%</li>
+            <li>Designed and launched a strategic human capital initiative bridging gaps in formal Army training, equipping 1,000+ soldiers with tools for financial literacy, relationship management, and career advancement</li>
+            <li>Instituted a data-driven decision framework for resource allocation using performance analytics; 50% increase in performance metrics and $100k+ in recurring annual cost savings</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="role">Battalion Fire Support Officer, 2nd Armored Brigade Combat Team</div>
+          <div class="meta">Fort Bliss, TX · 2021–2023</div>
+          <ul>
+            <li>Led a high-visibility inter-agency initiative supporting resettlement of 10,000+ Afghan refugees; rated top 10% of officers in Battalion</li>
+            <li>Cultivated cross-functional partnerships across a 1,200+ soldier organization to secure priority of key assets; processed 50% more missions than peer units</li>
+            <li>Engineered a quantitative inventory management framework for $10M+ of assets, cutting inventory time by 80%</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="role">Fire Direction Officer, 2nd ABCT</div>
+          <div class="meta">Port of Shuaiba, Kuwait · 2021</div>
+          <ul>
+            <li>Redesigned ship loading/unloading workflows, reducing processing time from 12 to 8 hours during the 2021 Suez Canal crisis</li>
+            <li>Directed redeployment of 250 soldiers and $6M+ of equipment; reduced quarantine from 14 to 7 days</li>
+            <li>Designed cultural understanding training for joint exercises (Operation Spartan Shield)</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="role">Platoon Leader, 2nd ABCT</div>
+          <div class="meta">Camp Buehring, Kuwait · 2020–2021</div>
+          <ul>
+            <li>Replaced manual maintenance process with forecasting models across a 1,500-member coalition; parts lag 10 to 5 days, waste down 25%</li>
+            <li>Led and trained 22 soldiers providing ammunition and logistics support for 2,000+ NATO and Kuwaiti troops</li>
+            <li>Coordinated 500+ Field Artillery missions delivering 9,000+ rounds for coalition forces</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="additional">
+      <h2>Additional Information</h2>
+      <div class="tiles">
+        <article class="card">
+          <h3>Pre-MBA Internship</h3>
+          <div class="meta">Santander Bank · Wealth Management</div>
+          <p>Analyzed and advised $2M+ accounts in the wealth management division.</p>
+        </article>
+        <article class="card">
+          <h3>Volunteer</h3>
+          <ul>
+            <li>Service2School Ambassador (Veterans Admissions Mentor)</li>
+            <li>At-risk youth mentor (Fort Bliss Tennis Club)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Interests</h3>
+          <div class="chips">
+            <span class="chip">Tennis (USTA)</span>
+            <span class="chip">Boston Sports*</span>
+            <span class="chip">Fantasy Football</span>
+            <span class="chip">Cycling</span>
+          </div>
+          <p class="meta" style="margin-top:0.7rem;">*Except the Patriots.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      Alex Porter · Columbia Business School MBA, May 2027
+    </footer>
+  </main>
+</body>
+</html>
